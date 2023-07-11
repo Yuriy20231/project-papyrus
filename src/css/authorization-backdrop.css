@@ -1,0 +1,52 @@
+
+.authorization__bacdrop {
+    z-index: 1000;
+    position: fixed;
+  
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-color: #4f2ee8;
+  
+    transform: translateY(0);
+    transition-property: opacity, transform;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  }
+  
+   .authorization__bacdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  
+    transform: translateY(-101%);
+  }
+
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  
+  } 
+  
+  .blur-component {
+    position: absolute;
+
+    background: rgba(204, 236, 231, 0.5);
+    filter: blur(539.791px);
+  
+    @media screen and (min-width: 768px) {
+      width: 1421px;
+      height: 1421px;
+  
+      left: -846px;
+      top: -918px;
+    }
+    width: 963px;
+    height: 1055px;
+  
+    left: -646px;
+    top: -718px;
+  }

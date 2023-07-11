@@ -2,50 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>papyrus8</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="stylesheet" href="./sass/base/_spin.scss" />
-    <link rel="stylesheet" href="./sass/base/_support-ua.scss" />
-    <link rel="stylesheet" href="./sass/base/_all-categories.scss" />
-    <link rel="stylesheet" href="./sass/base/_footer.scss" />
-    <link rel="stylesheet" href="./sass/base/_login.scss" />
-    <link rel="stylesheet" href="./sass/base/_login-dark.scss" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <!-- <link rel="manifest" href="./images/favicon/site.webmanifest" /> -->
+    <title>HOME</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="body">
-    <include src="./partials/pages/header.html"></include>
-    <include src="./partials/modals/login-modal.html"></include>
-    <div class="main-page-wrapper container">
-      <div class="categories-support-wraper">
-        <include src="./partials/pages/all-categories.html"></include>
-        <include src="./partials/pages/support-ua.html"></include>
-      </div>
-      <include src="./partials/pages/main-content.html"></include>
-    </div>
-    <include src="./partials/pages/footer.html"></include>
-    <include src="./partials/pages/modal-footer-team.html"></include>
-    <div class="centered-element"></div>
 
-    <script type="module" src="./index.js"></script>
+  <body>
+    <load ="partials/scrollup.html" />
+    <load ="partials/authorization-modal.html" />
+    <load ="partials/header.html" />
+
+    <main>
+      <div class="container home-page__flex">
+        <aside class="aside-flex">
+          <div>
+            <load ="partials/all-category.html" />
+          </div>
+          <div>
+            <load ="partials/support-UA.html" />
+          </div>
+        </aside>
+
+        <load ="partials/main-home.html" />
+
+        <load ="partials/category-book-list.html" />
+      </div>
+    </main>
+
+    <!-- Loads the specified .html file -->
+    <load ="partials/footer.html" />
+
+    <load ="partials/modal-window.html" />
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

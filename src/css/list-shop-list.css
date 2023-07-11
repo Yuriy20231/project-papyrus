@@ -1,0 +1,449 @@
+
+.container-shoppingList {
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-list-container {
+  display: flex;
+  column-gap: 14px;
+  padding: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-container {
+    padding: 24px;
+    column-gap: 24px;
+    /* display: flex; */
+    /* height: 213px; */
+    width: 704px;
+    /* border-radius: 16px;
+          border: 2px solid #4F2EE866;
+          list-style-type: none; */
+  }
+}
+
+.shop-title {
+  margin-bottom: 40px;
+}
+
+/* @media screen and (min-width: 768px) {
+  .delete-btn svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .amazon {
+    width: 48px;
+  }
+} */
+
+@media screen and (min-width: 1440px) {
+  .support-shop-container {
+    padding-top: 14px;
+    padding-bottom: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .emptyList {
+    margin-left: 355px;
+    color: var(--main-textcolor);
+  }
+}
+
+.ulShoppingList {
+  margin-bottom: 20px;
+}
+
+.pict-shoppingList {
+  width: 100px;
+  align-self: center;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .pict-shoppingList {
+    width: 116px;
+    /* background-color: aqua; */
+    /* delete background-color */
+    /* width: 116px;
+        height: 165px;
+        border-radius: 8px; */
+    /* margin-top: 24px;
+        margin-left: 24px; */
+  }
+}
+
+/* @media screen and (min-width: 1440px) {
+  .pict-shoppingList {
+    background-color: aqua;
+        delete background-color        
+        border-radius: 8px;
+        margin-top: 24px;
+        margin-left: 24px;
+    width: 116px;
+    height: 165px;
+  }
+} */
+
+.item-shoppingList {
+  position: relative;
+  /* padding: 14px;
+  display: flex;
+  column-gap: 14px;
+  height: 170px; */
+  border-radius: 16px;
+  border: 2px solid #4f2ee866;
+  list-style-type: none;
+  background: var(--background-header);
+  margin-bottom: 20px;
+}
+
+.shop-list-container {
+  position: relative;
+
+  padding: 14px;
+  display: flex;
+  column-gap: 14px;
+  height: 170px;
+
+  /* border-radius: 16px;
+    border: 2px solid #4f2ee866;
+    list-style-type: none;
+    background: var(--background-header);
+    margin-bottom: 20px; */
+}
+
+@media screen and (min-width: 375px) {
+  .item-shoppingList {
+    width: 335px;
+  }
+
+  .delete-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+    .links-shoppingList {
+      display: flex;
+      align-items: center;
+      filter: grayscale(100%);
+      gap: 8px;
+      /* max-height: 30px; */
+      list-style-type: none;
+    }
+
+  .discription-shoppinglist {
+    color: var(--border-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-shoppingList {
+    /* height: 213px; */
+    width: 704px;
+    /* border-radius: 16px;
+    border: 2px solid #4F2EE866;
+    list-style-type: none; */
+  }
+
+  .delete-btn {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url("../img/shopping-list/delete_ikon.svg") center no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .item-shoppingList {
+    /* display: flex;
+        height: 213px;
+            width: 704px;
+        border-radius: 16px;
+        border: 2px solid #4F2EE866;
+        list-style-type: none; */
+
+    width: 996px;
+
+  }
+  .container-shoppingList {
+      padding-left: 32px;
+    }
+}
+
+.shop-book-title {
+  font-family: 'DM Sans Bold';
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--border-color);
+  margin-bottom: 4px;
+  width: 145px;
+  height: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.shop-book-title:hover {
+  height: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  .shop-book-title {
+    width: 100px;
+    height: 18px;
+  }
+
+  .title-shoppingList .shop-sub-title {
+    margin-bottom: 8px;
+
+    width: 110px;
+    height: 14px;
+    overflow: hidden;
+
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-textcolor);
+  }
+
+
+  .title-shoppingList .shop-sub-title:hover {
+    height: auto;
+    cursor: pointer;
+  }
+
+  .content-container-shoppingList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 100vw; */
+  }
+
+  .delete-btn {
+    position: absolute;
+    border-radius: 50%;
+
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url("../img/shopping-list/delete_ikon.svg") center no-repeat;
+  }
+
+  /* .title-delete-shoppingList {
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  .discription-shoppinglist {
+    width: 193px;
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    font-family: 'DM Sans Regular';
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+    color: var(--border-color);
+  }
+
+  .discription-shoppinglist:hover {
+    height: auto;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 374.98px) {
+    .discription-shoppinglist {
+      width: 134px;
+      height: 68px;
+    }
+  }
+
+  @media screen and (max-width: 1439.98px) {
+    .discription-shoppinglist {
+      margin-top: 14px;
+      margin-bottom: 32px;
+      /* margin-bottom: 8px;
+        width: 110px;
+        height: 14px;
+        overflow: hidden;
+        font-family: 'DM Sans Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #b4afaf; */
+    }
+  }
+
+  .shop-refs {
+    width: 80px;
+  }
+
+  .autor-link-shoppingList {
+    /* position: absolute; */
+      /* bottom: 20px;
+      right: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .shop-sub-title {
+      margin-bottom: 14px;
+      width: 100%;
+      margin-bottom: 8px;
+  
+      width: 110px;
+      height: 14px;
+      overflow: hidden;
+  
+      font-family: 'DM Sans Regular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: var(--main-textcolor);
+    }
+  
+    .title-shoppingList {
+      margin-bottom: 16px;
+    }
+
+    .autor-link-shoppingList {
+      /* position: absolute; */
+      /* bottom: 20px;
+        right: 20px; */
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }}
+
+  .links-shoppingList {
+    display: flex;
+    align-items: baseline;
+    filter: grayscale(100%);
+    gap: 8px;
+    /* max-height: 30px; */
+    list-style-type: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .links-shoppingList {
+      gap: 16px;
+    }
+  }
+
+  .autor-link-shoppingList .shop-book-autor {
+    font-family: 'DM Sans Italic';
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    color: #b4afaf;
+  }
+
+  .shop-a {
+    display: flex;
+    align-items: center;
+  }
+
+  .emptyList {
+    text-align: center;
+    margin-top: 140px;
+    display: none;
+  }
+
+  .empty-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shop-book-link {
+    max-height: 11px;
+  }
+
+  /* @media screen and (min-width: 768px) {
+  .amazon-link {
+    width: 48px;
+    max-height: 15px;
+  }
+} */
+
+  .book-shop-link {
+    width: 32px;
+    max-height: 30px;
+  }
+
+  /* .apple-store,
+.book-shop {
+  width: 16px;
+  height: 16px;
+} */
+
+  /* @media screen and (min-width: 768px) {
+  .apple-store {
+    width: 28px;
+    height: 27px;
+  }
+} */
+
+
+  @media screen and (min-width: 768px) {
+    .book-shop {
+      width: 32px;
+      height: 30px;
+    }
+
+  }
+
+
+
+  /* .discription-shoppinglist {
+    font-size: 12px;
+  } */
+
+  /* .autor-link-shoppingList .shop-book-autor {
+    font-size: 5px;
+
+  } */
+
+
+
+
+@media screen and (min-width: 1440px) {
+  .discription-shoppinglist {
+    margin-bottom: 32px;
+    width: 808px;
+  }
+
+  .shop-book-autor {
+    font-size: 12px;
+  }
+}
+
+.shop-title {
+  color: var(--border-color);
+}
+@media (max-width: 1439.98px) {
+  .support-shop {
+    display: none;
+  }
+}

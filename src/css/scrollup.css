@@ -1,0 +1,42 @@
+.scrollup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.scrollup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #4F2EE8;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transform: translateX(200%);
+    transition: opacity 250ms linear, visibility 250ms linear, background-color 250ms linear, transform 250ms linear;
+    visibility: hidden;
+    z-index: 100;
+    opacity: 0;
+}
+
+.scrollup:hover {
+    background-color: #37209d;
+}
+
+@media screen and (min-width: 768px) {
+    .scrollup {
+        bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .scrollup {
+        bottom: 50px;
+    }
+}
